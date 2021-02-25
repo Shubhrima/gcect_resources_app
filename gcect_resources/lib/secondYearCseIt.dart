@@ -59,7 +59,7 @@ class secondYearCSEIT extends StatelessWidget {
                     child: ReusableCard(name: 'Digital Electronics', url_link: "https://shubhrima.github.io/project_resources/pdf/2nd%20year/cse_it/de.pdf",),
                   ),
                   Expanded(
-                    child: ReusableCard(name: 'IT Workshop', url_link: "https://shubhrima.github.io/project_resources/pdf/1st%20year/pythoncheatsheet.pdf",),
+                    child: ReusableCard(name: 'IT Workshop', url_link: "https://shubhrima.github.io/project_resources/pdf/2nd%20year/pythoncheatsheet.pdf",),
                   ),
                 ],
               ),

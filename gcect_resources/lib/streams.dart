@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'subject.dart';
 import 'constants.dart';
 import 'secondYearCseIt.dart';
+import 'secondYearCT.dart';
 
 class StreamsPage extends StatelessWidget {
   @override
@@ -129,9 +129,11 @@ class StreamsPage extends StatelessWidget {
                 ],
               ),
               onPressed: () {
-                kstream=3;
-                print(kstream);
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> SubjectPage(),),);
+                if (year==2)
+                  {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> secondyearCT(),),);
+                  }
+
               },
             ),
             ),

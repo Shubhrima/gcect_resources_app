@@ -5,21 +5,26 @@ import 'package:gcect_resources/firstYearCSEIT.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'streams.dart';
 import 'constants.dart';
+import 'conatct.dart';
+import 'links.dart';
 
 
 
 class Home extends StatelessWidget {
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
       //drawer: NavDrawer(),
       backgroundColor: Colors.white,
+
       appBar: AppBar(
         title: Center(
           child: Text('Notefy 📝'),
         ),
         backgroundColor: Colors.green,
       ),
+      drawer: NavDrawer(),
       body: Scaffold(
         body: Column(
           children: <Widget>[
@@ -248,7 +253,7 @@ class Home extends StatelessWidget {
 }
 
 
-/*class NavDrawer extends StatelessWidget {
+class NavDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -269,15 +274,25 @@ class Home extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.link),
             title: Text('Important Links'),
-            onTap: () => {Navigator.of(context).pop()},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Links(),),);
+              },
+
           ),
           ListTile(
+            leading: Icon(Icons.contact_mail),
+            title: Text('Contribute'),
+            onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> contact(),),);
+            },
+          ),ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Exit'),
             onTap: () => {Navigator.of(context).pop()},
           ),
+
         ],
       ),
     );
   }
-}*/
+}
