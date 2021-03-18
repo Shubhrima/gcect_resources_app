@@ -1,7 +1,7 @@
 # gcect_resources
 
 A new Flutter application.
-
+<img src="assets/appMockups/notefy.svg">
 ## Getting Started
 
 This project is a starting point for a Flutter application.
