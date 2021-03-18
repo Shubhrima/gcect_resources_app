@@ -1,9 +1,10 @@
 # gcect_resources
 
-A new Flutter application.
+A new Flutter application that constitutes the college syllabus and other important details.
 <img src="assets/appMockups/notefy.svg">
-## Getting Started
+<img src="assets/appMockups/app.mp4">
 
+## Getting Started
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
