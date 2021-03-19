@@ -1,7 +1,7 @@
 # gcect_resources
 
-A new Flutter application that constitutes the college syllabus and other important details. 
-<img src="assets/appMockups/notefy.svg" width="250">
+<p>A new Flutter application that constitutes the college syllabus and other important details.</p>
+<p><img src="assets/appMockups/notefy.svg" width="250" align="center"></p>
 <img src="assets/appMockups/app.mp4">
 
 ## Getting Started
