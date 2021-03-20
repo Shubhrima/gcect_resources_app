@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:gcect_resources/firstYearCSEIT.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'streams.dart';
+import 'events.dart';
 import 'constants.dart';
 import 'conatct.dart';
 import 'links.dart';
@@ -131,7 +132,8 @@ class Home extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => StreamsPage(),),);
               })
     ),
-            Expanded(child:FlatButton(
+            Expanded(
+              child:FlatButton(
               child: Row(
                 children: [
                   SizedBox(
@@ -171,7 +173,7 @@ class Home extends StatelessWidget {
         ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print('notes');
+          print('questions');
         },
         child: RichText(
             text: TextSpan(
@@ -260,39 +262,56 @@ class NavDrawer extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
-            child: Text(
-              'MENU',
-              style: TextStyle(color: Colors.white, fontSize: 50, fontWeight: FontWeight.bold),
+          Container(
+            height: 90,
+            color: Colors.green,
+            child: DrawerHeader(
+              child: Text(
+                'MENU',
+                style: TextStyle(color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold,),
+              ),
+              /*decoration: BoxDecoration(
+                  color: Colors.green,
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('assets/images/cover.jpg')),
+              ),*/
             ),
-            decoration: BoxDecoration(
-                color: Colors.green,
-                image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage('assets/images/cover.jpg'))),
           ),
+
           ListTile(
-            leading: Icon(Icons.link),
+            leading: Icon(Icons.link, color: Colors.green,),
             title: Text('Important Links'),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> Links(),),);
               },
+          ),
+          ListTile(
+            leading: Icon(Icons.event_note_outlined,color: Colors.green,),
+            title: Text('Tech Events'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> Events(),),);
+            },
 
           ),
           ListTile(
-            leading: Icon(Icons.contact_mail),
-            title: Text('Contribute'),
+            leading: Icon(Icons.contact_mail, color: Colors.green,),
+            title: Text('Contact'),
             onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context)=> contact(),),);
             },
-          ),ListTile(
-            leading: Icon(Icons.exit_to_app),
+          ),
+          ListTile(
+
+            leading: Icon(Icons.exit_to_app, color: Colors.black,),
             title: Text('Exit'),
             onTap: () => {Navigator.of(context).pop()},
           ),
 
         ],
       ),
+
     );
   }
 }
+
