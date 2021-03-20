@@ -3,7 +3,7 @@
 <img src="assets/images/notefy.svg" width="200">
 
 ## App Demo
-<img src="assets/appMockups/app.gif" height="400">
+<img src="assets/appMockups/app.gif" height="400" width="250">
 
 ## Getting Started
 This project is a starting point for a Flutter application.
